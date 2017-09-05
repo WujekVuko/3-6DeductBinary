@@ -1,18 +1,16 @@
-package com.company;
-
-public class SumZU2 {
+class SumZU2 {
     private int[] sum = new int[32];
     private int[] a = new int[32];
     private int[] b = new int[32];
     private int i;
 
-    public SumZU2(int[] o1, int x, int[] o2, int y) {
+    SumZU2(int[] o1, int x, int[] o2, int y) {
         i = x;
         a = o1;
         b = o2;
 
     }
-    public void sumZU2() {
+    void sumZU2() {
         int l = 0;
 
         for (int j = 0; j <= i; j++) {
@@ -33,6 +31,6 @@ public class SumZU2 {
         }
         sum[31] = (a[31] + b[31] + l) % 2;
     }
-    public int getZU2(int a){return sum[a];}
-    public int getI(){return i;}
+    int getZU2(int a){return sum[a];}
+    int getI(){return i;}
 }
